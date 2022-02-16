@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2022.02.16 22:44:28.849,=D:\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2022.02.16 22:44:28.882,=D:\Documents\Embarcadero\Studio\Projects\File1.cpp</Transaction>
+    <Transaction>2022.02.16 22:46:07.485,D:\Documents\GitHub\Cpp-course\3 Cycles\Cycles.cpp=D:\Documents\Embarcadero\Studio\Projects\File1.cpp</Transaction>
+    <Transaction>2022.02.16 22:46:53.567,D:\Documents\GitHub\Cpp-course\3 Cycles\Cycles.h=D:\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2022.02.16 22:46:59.979,D:\Documents\GitHub\Cpp-course\3 Cycles\Cycles.cbproj=D:\Documents\Embarcadero\Studio\Projects\Project1.cbproj</Transaction>
+  </Transactions>
+</BorlandProject>

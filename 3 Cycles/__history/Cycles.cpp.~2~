@@ -1,0 +1,28 @@
+#include <iostream>
+#include <windows.h>
+#include <conio.h>
+#include <string>
+using namespace std;
+#pragma hdrstop
+#pragma argsused
+
+#ifdef _WIN32
+#include <tchar.h>
+#else
+  typedef char _TCHAR;
+  #define _tmain main
+#endif
+
+#include <stdio.h>
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+//--------------- Синтаксис структорованого оператора for ---------------------------------
+	for (int i = 0; i <= 255; i++) {
+	  cout << (char)i;  // в циклі здійснюється перетворення змінної i, що приймає значення від 0 до 255 з кроком в 1, у символьний тип
+					  // таким чином виводиться в консоль таблиця симвоолів, де кожен символ кодується однобайтовим значенням
+	}
+//-----------------------------------------------------------------------------------------
+	getch();
+	return 0;
+}

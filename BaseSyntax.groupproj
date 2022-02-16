@@ -9,6 +9,9 @@
         <Projects Include="2 Input-Output\Input-Output.cbproj">
             <Dependencies/>
         </Projects>
+        <Projects Include="3 Cycles\Cycles.cbproj">
+            <Dependencies/>
+        </Projects>
     </ItemGroup>
     <ProjectExtensions>
         <Borland.Personality>Default.Personality.12</Borland.Personality>
@@ -35,14 +38,23 @@
     <Target Name="Input-Output:Make">
         <MSBuild Projects="2 Input-Output\Input-Output.cbproj" Targets="Make"/>
     </Target>
+    <Target Name="Cycles">
+        <MSBuild Projects="3 Cycles\Cycles.cbproj"/>
+    </Target>
+    <Target Name="Cycles:Clean">
+        <MSBuild Projects="3 Cycles\Cycles.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Cycles:Make">
+        <MSBuild Projects="3 Cycles\Cycles.cbproj" Targets="Make"/>
+    </Target>
     <Target Name="Build">
-        <CallTarget Targets="DataTypes;Input-Output"/>
+        <CallTarget Targets="DataTypes;Input-Output;Cycles"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="DataTypes:Clean;Input-Output:Clean"/>
+        <CallTarget Targets="DataTypes:Clean;Input-Output:Clean;Cycles:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="DataTypes:Make;Input-Output:Make"/>
+        <CallTarget Targets="DataTypes:Make;Input-Output:Make;Cycles:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>
