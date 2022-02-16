@@ -1,8 +1,7 @@
 #include <iostream>
 #include <windows.h> // Потрібна для функції переключення кодової сторінки
 #include <conio.h> // Потрібна для функції getch()
-#include <string>  // Потрібна для строкового типу даних string
-using namespace std; // Щоб не треба було писати в коді завжди: std::cin..., std::cout..., std::string...
+#include <string>  // Потрібна дл строкового типу даних string
 #pragma hdrstop
 #pragma argsused
 
