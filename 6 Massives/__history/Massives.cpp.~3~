@@ -1,0 +1,46 @@
+#include <iostream>
+#include <windows.h>
+#include <conio.h>
+#include <string>
+#pragma hdrstop
+#pragma argsused
+
+#ifdef _WIN32
+#include <tchar.h>
+#else
+  typedef char _TCHAR;
+  #define _tmain main
+#endif
+
+#include <stdio.h>
+
+int _tmain(int argc, _TCHAR* argv[]) 
+{
+	SetConsoleOutputCP(1251);
+
+	std::cout<<"Приклад роботи з одновимірним масивом"<<std::endl;
+	int massive1[10]; // Опис одновимірного целочисельного масиву на 10 елементів
+	randomize(); // Функція, що дозволяє генерувати псевдовипадкові числа
+	for (int i=0; i < 10; i++) {
+	   massive1[i] = random(50); //заповнення i-го елементу масиву псевдовипадковим значенням з діапазону від 0 до 49 
+	   std::cout<<massive1[i]<<"\t";  // Виведення отриманого масиву
+	}
+	// Пошук мінімального елемента масива
+	int minimum = massive1[0], maximum = massive1[0]; // Задаємось, що мінімальний і максимальний елемнт - це перший елемент масиву
+	
+	for (int i = 1; i < 10; i++) {    // Послідовно перебираємо всі елементи масиву починаючи з другого
+	   if (massive1[i]<minimum) {      // Якщо поточний елемент менше поточного значення minimum
+		  minimum = massive1[i];       // minimum присвоюємо новее значення
+	   }
+	   if (massive1[i]>maximum) {      // Якщо поточний елемент більший за поточне значення maximum
+		  maximum = massive1[i] ;	  // maximum присвоюэмо нове значення
+	   }
+	}
+	std::cout<<std::endl<<"Мінімальний елемент: "<<minimum<<"\tМаксимальний елемент: "<<maximum;
+	std::cout<<std::endl<<std::endl;
+
+	std::cout<<"Приклад роботи з двовимірним масивом"<<std::endl;
+	int 
+	getch();
+	return 0;
+}

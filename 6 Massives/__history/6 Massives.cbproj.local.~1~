@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2022.05.28 23:45:49.797,=D:\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2022.05.28 23:45:49.867,=D:\Documents\Embarcadero\Studio\Projects\File1.cpp</Transaction>
+    <Transaction>2022.05.28 23:46:47.720,D:\Documents\GitHub\Cpp-course\6 Massives\Massives.cpp=D:\Documents\Embarcadero\Studio\Projects\File1.cpp</Transaction>
+    <Transaction>2022.05.28 23:47:03.065,D:\Documents\GitHub\Cpp-course\6 Massives\Massives.h=D:\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2022.05.28 23:47:13.849,D:\Documents\GitHub\Cpp-course\6 Massives\Massives.cbproj=D:\Documents\Embarcadero\Studio\Projects\Project1.cbproj</Transaction>
+    <Transaction>2022.05.28 23:47:24.485,D:\Documents\GitHub\Cpp-course\6 Massives\6 Massives.cbproj=D:\Documents\GitHub\Cpp-course\6 Massives\Massives.cbproj</Transaction>
+  </Transactions>
+</BorlandProject>

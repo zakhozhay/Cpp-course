@@ -1,0 +1,108 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{F7AF14DF-7029-436A-9E90-115665CFA06B}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="1 Data Types\1 DataTypes.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="2 Input-Output\2 Input-Output.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="3 Mathematics\3 Mathematics.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="4 Cycles\4 Cycles.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="5 Branches\5 Branches.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="6 Massives\6 Massives.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="7 Functions\7 Functions.cbproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="1 DataTypes">
+        <MSBuild Projects="1 Data Types\1 DataTypes.cbproj"/>
+    </Target>
+    <Target Name="1 DataTypes:Clean">
+        <MSBuild Projects="1 Data Types\1 DataTypes.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="1 DataTypes:Make">
+        <MSBuild Projects="1 Data Types\1 DataTypes.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="2 Input-Output">
+        <MSBuild Projects="2 Input-Output\2 Input-Output.cbproj"/>
+    </Target>
+    <Target Name="2 Input-Output:Clean">
+        <MSBuild Projects="2 Input-Output\2 Input-Output.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="2 Input-Output:Make">
+        <MSBuild Projects="2 Input-Output\2 Input-Output.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="3 Mathematics">
+        <MSBuild Projects="3 Mathematics\3 Mathematics.cbproj"/>
+    </Target>
+    <Target Name="3 Mathematics:Clean">
+        <MSBuild Projects="3 Mathematics\3 Mathematics.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="3 Mathematics:Make">
+        <MSBuild Projects="3 Mathematics\3 Mathematics.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="4 Cycles">
+        <MSBuild Projects="4 Cycles\4 Cycles.cbproj"/>
+    </Target>
+    <Target Name="4 Cycles:Clean">
+        <MSBuild Projects="4 Cycles\4 Cycles.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="4 Cycles:Make">
+        <MSBuild Projects="4 Cycles\4 Cycles.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="5 Branches">
+        <MSBuild Projects="5 Branches\5 Branches.cbproj"/>
+    </Target>
+    <Target Name="5 Branches:Clean">
+        <MSBuild Projects="5 Branches\5 Branches.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="5 Branches:Make">
+        <MSBuild Projects="5 Branches\5 Branches.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="6 Massives">
+        <MSBuild Projects="6 Massives\6 Massives.cbproj"/>
+    </Target>
+    <Target Name="6 Massives:Clean">
+        <MSBuild Projects="6 Massives\6 Massives.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="6 Massives:Make">
+        <MSBuild Projects="6 Massives\6 Massives.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="7 Functions">
+        <MSBuild Projects="7 Functions\7 Functions.cbproj"/>
+    </Target>
+    <Target Name="7 Functions:Clean">
+        <MSBuild Projects="7 Functions\7 Functions.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="7 Functions:Make">
+        <MSBuild Projects="7 Functions\7 Functions.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="1 DataTypes;2 Input-Output;3 Mathematics;4 Cycles;5 Branches;6 Massives;7 Functions"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="1 DataTypes:Clean;2 Input-Output:Clean;3 Mathematics:Clean;4 Cycles:Clean;5 Branches:Clean;6 Massives:Clean;7 Functions:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="1 DataTypes:Make;2 Input-Output:Make;3 Mathematics:Make;4 Cycles:Make;5 Branches:Make;6 Massives:Make;7 Functions:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

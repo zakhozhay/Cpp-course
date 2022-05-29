@@ -1,0 +1,42 @@
+#include <iostream>
+#include <windows.h>
+#include <conio.h>
+#include <string>
+#include <math.h>
+#pragma hdrstop
+#pragma argsused
+
+#ifdef _WIN32
+#include <tchar.h>
+#else
+  typedef char _TCHAR;
+  #define _tmain main
+#endif
+
+#include <stdio.h>
+
+int _tmain(int argc, _TCHAR* argv[]) 
+{
+
+	SetConsoleOutputCP(1251);
+	
+	// Приклад використання структурованого оператору циклу for
+	// виведення таблиці символів
+	char symbol; // Змінна, що буде містити відповідний символ таблиці
+	for (byte code = 0; code < 255; code++) {   // Створюється цикл в якому буде змінюватися значення code від 0 до 255 (увесь діапазон кодів символів)
+		symbol = code;  // Для отримання символу по його коду використовується неявне перетворення типу даних byte в char
+		std::cout<<"code = "<<code<<"\t"<<"symbol = "<<symbol<<std::endl; // Виведення коду і відповідного символу по одній комбінації в рядку (за одне виконання тіла циклу)
+	}
+
+	// Приклад використання структурованого оператору циклу while
+	int quantity;
+	std::cout<<"Введіть кількість раптових чисел для генерації: ";
+	std::cin>>quantity;
+	int digit = 1;
+	while (digit <= quantity) {
+		std::cout<<"Число "<<digit<<" = "<<random(65535)<<std::endl;
+		digit++;		
+	}
+	getch();
+	return 0;
+}

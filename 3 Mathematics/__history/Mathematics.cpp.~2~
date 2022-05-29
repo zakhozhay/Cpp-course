@@ -1,0 +1,29 @@
+#include <iostream>
+#include <windows.h>
+#include <conio.h>
+#include <string>
+#include <Math.h> // Підключення маьематичної бібліотеки для доступу до математичних функцій
+#pragma hdrstop
+#pragma argsused
+
+#ifdef _WIN32
+#include <tchar.h>
+#else
+  typedef char _TCHAR;
+  #define _tmain main
+#endif
+
+#include <stdio.h>
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	SetConsoleOutputCP(1251);
+
+	int c = pow(4, 2);
+	int d=abs(c);
+	
+	std::cout<<c;
+
+	getch();
+	return 0;
+}
