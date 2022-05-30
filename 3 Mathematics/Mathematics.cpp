@@ -20,10 +20,10 @@ int _tmain(int argc, _TCHAR* argv[])
 	SetConsoleOutputCP(1251);
 
 	int x, y, z;
-	std::cout<<"Введіть аргументи x y z: ";
-	std::cin>>x>>y>>z;
+	std::wcout<<"Введіть аргументи x y z: ";
+	std::wcin>>x>>y>>z;
 	double result = (45-x)/34+x/(pow(y,3)-z)+sin(x+z); //Рядковий запиз математичного вираза з використанням математичних фуекцій
-	std::cout<<"Результат розрахунку дорівнює: "<<result;
+	std::wcout<<"Результат розрахунку дорівнює: "<<result;
 	
 	getch();
 	return 0;

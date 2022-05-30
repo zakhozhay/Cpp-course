@@ -25,31 +25,31 @@ convert:
 	std::cout<<"Введіть кількість балів:";
 	std::cin>>credits;
 	if (credits >=90 && credits <=100) {
-				std::cout<<"Бал "<<credits<<" відповідає букві A за шкалою ECTS";
+				std::wcout<<"Бал "<<credits<<" відповідає букві A за шкалою ECTS";
 	}
 	else if (credits >= 82 && credits <=89) {
-					std::cout<<"Бал "<<credits<<" відповідає букві B за шкалою ECTS";	 
+					std::wcout<<"Бал "<<credits<<" відповідає букві B за шкалою ECTS";	 
 		 }
 		 else if (credits >= 74 && credits <= 81) {
-						std::cout<<"Бал "<<credits<<" відповідає букві C за шкалою ECTS";    
+						std::wcout<<"Бал "<<credits<<" відповідає букві C за шкалою ECTS";    
 			  }            
 			  else if (credits >= 64 && credits <= 73) {
-							  std::cout<<"Бал "<<credits<<" відповідає букві D за шкалою ECTS"; 
+							  std::wcout<<"Бал "<<credits<<" відповідає букві D за шкалою ECTS"; 
 				   }
 				   else if (credits >= 60 && credits <= 63) {
-									std::cout<<"Бал "<<credits<<" відповідає букві E за шкалою ECTS";    
+									std::wcout<<"Бал "<<credits<<" відповідає букві E за шкалою ECTS";    
 						}
 						else if (credits >= 35 && credits <= 59) {
-										std::cout<<"Бал "<<credits<<" відповідає букві Fx за шкалою ECTS";    
+										std::wcout<<"Бал "<<credits<<" відповідає букві Fx за шкалою ECTS";    
 
 							 }
 							 else if (credits >= 0 && credits <= 34) {
-											 std::cout<<"Бал "<<credits<<" відповідає букві F за шкалою ECTS";
+											 std::wcout<<"Бал "<<credits<<" відповідає букві F за шкалою ECTS";
 								  }
-								  else std::cout<<"Введене значення балу не відповідає шкалі ECTS";
+								  else std::wcout<<"Введене значення балу не відповідає шкалі ECTS";
 
 
-	std::cout<<std::endl<<"Бажаєте повторити запит? (y/n): ";
+	std::wcout<<std::endl<<"Бажаєте повторити запит? (y/n): ";
 	
 quary:
 		std::cin>>flag;
@@ -57,12 +57,12 @@ quary:
 			case 'y': goto convert; break;
 			case 'n': goto next;
 			default: {
-					   std::cout<<"Помилка! Повторити запит? (y/n): ";
+					   std::wcout<<"Помилка! Повторити запит? (y/n): ";
 					   goto quary;
 					 }
 		}
 next:		 
-	std::cout<<"Натисніть будь-яку кнопку...";
+	std::wcout<<"Натисніть будь-яку кнопку...";
 	getch();
 	return 0;
 }

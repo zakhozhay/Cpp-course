@@ -2,10 +2,10 @@
 <BorlandProject>
 	<Transactions>
     <Transaction>1899.12.30 00:00:00.000.181,D:\Documents\Embarcadero\Studio\Projects\Project1PCH1.h=D:\Documents\GitHub\Cpp-course\2 Input-Output\InputOutput.h</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.733,=D:\Documents\Embarcadero\Studio\Projects\File1.cpp</Transaction>
     <Transaction>1899.12.30 00:00:00.000.191,D:\Documents\Embarcadero\Studio\Projects\File1.cpp=D:\Documents\GitHub\Cpp-course\2 Input-Output\InputOutput.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.733,=D:\Documents\Embarcadero\Studio\Projects\File1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.444,D:\Documents\GitHub\Cpp-course\2 Input-Output\2 Input-Output.cbproj=D:\Documents\GitHub\Cpp-course\2 Input-Output\Input-Output.cbproj</Transaction>
     <Transaction>1899.12.30 00:00:00.000.195,D:\Documents\Embarcadero\Studio\Projects\Project1.cbproj=D:\Documents\GitHub\Cpp-course\2 Input-Output\Input-Output.cbproj</Transaction>
     <Transaction>1899.12.30 00:00:00.000.670,=D:\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
-    <Transaction>2022.05.26 23:58:19.444,D:\Documents\GitHub\Cpp-course\2 Input-Output\2 Input-Output.cbproj=D:\Documents\GitHub\Cpp-course\2 Input-Output\Input-Output.cbproj</Transaction>
   </Transactions>
 </BorlandProject>

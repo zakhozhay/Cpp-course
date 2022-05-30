@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.040,D:\Documents\GitHub\Cpp-course\5 Branches\Branches.cpp=D:\Documents\Embarcadero\Studio\Projects\File1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.435,D:\Documents\GitHub\Cpp-course\5 Branches\Branches.h=D:\Documents\Embarcadero\Studio\Projects\5 BranchesPCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.310,D:\Documents\Embarcadero\Studio\Projects\5 BranchesPCH1.h=D:\Documents\Embarcadero\Studio\Projects\BranchesPCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.018,D:\Documents\Embarcadero\Studio\Projects\ИкфтсруіPCH1.h=D:\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.028,D:\Documents\Embarcadero\Studio\Projects\Икфтсруі.cbproj=D:\Documents\Embarcadero\Studio\Projects\Project1.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.131,D:\Documents\GitHub\Cpp-course\5 Branches\Branches.cbproj=D:\Documents\Embarcadero\Studio\Projects\5 Branches.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.460,D:\Documents\GitHub\Cpp-course\5 Branches\5 Branches.cbproj=D:\Documents\GitHub\Cpp-course\5 Branches\Branches.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.330,D:\Documents\Embarcadero\Studio\Projects\5 Branches.cbproj=D:\Documents\Embarcadero\Studio\Projects\Branches.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.913,=D:\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.953,=D:\Documents\Embarcadero\Studio\Projects\File1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.187,D:\Documents\Embarcadero\Studio\Projects\Branches.cbproj=D:\Documents\Embarcadero\Studio\Projects\Икфтсруі.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.177,D:\Documents\Embarcadero\Studio\Projects\BranchesPCH1.h=D:\Documents\Embarcadero\Studio\Projects\ИкфтсруіPCH1.h</Transaction>
+  </Transactions>
+</BorlandProject>

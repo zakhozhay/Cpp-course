@@ -1,0 +1,52 @@
+#include <iostream>
+#include <windows.h>
+#include <conio.h>
+#include <string>
+#pragma hdrstop
+#pragma argsused
+
+#ifdef _WIN32
+#include <tchar.h>
+#else
+  typedef char _TCHAR;
+  #define _tmain main
+#endif
+
+#include <stdio.h>
+
+// Реалізація функції, що не повертає значення
+void ConsoleOut(std::string line)
+{
+	  std::cout<<line;
+}
+
+// Реалізація функції, що повертає значення
+int SumElementsMassive(int massive[10])
+{
+	int summa = 0;
+	for (int i = 0; i < 10; i++) {
+		summa += massive[i];
+	}
+	return summa;
+}
+
+int _tmain(int argc, _TCHAR* argv[]) 
+{
+	SetConsoleOutputCP(1251);
+
+	// Виклик функції, що не повертає значення
+	ConsoleOut("Приклад роботи функції, що не повертає значення");
+
+	// Приклад використання функції, що повертає значення суми елементів масиву
+	int mas[10];
+	randomize();
+	std::cout<<std::endl<<"Згенерований масив\n";
+	for (int i = 0; i < 10; i++) {
+		mas[i]=random(100);
+		std::cout<<mas[i]<<"\t";
+	}
+	
+	std::cout<<"\nСума елементів масиву: "<<SumElementsMassive(mas); // Виклик функції в яку передається згенерований масив і поврертається сумма його елементів
+	getch();
+	return 0;
+}
