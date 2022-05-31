@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2022.05.30 19:37:18.776,=D:\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2022.05.30 19:37:18.866,=D:\Documents\Embarcadero\Studio\Projects\File1.cpp</Transaction>
+    <Transaction>2022.05.30 19:40:18.344,D:\Documents\GitHub\Cpp-course\8 Recursion\Recursion.cpp=D:\Documents\Embarcadero\Studio\Projects\File1.cpp</Transaction>
+    <Transaction>2022.05.30 19:40:29.998,D:\Documents\GitHub\Cpp-course\8 Recursion\Recursion.h=D:\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2022.05.30 19:40:43.760,D:\Documents\GitHub\Cpp-course\8 Recursion\Recursion.cbproj=D:\Documents\Embarcadero\Studio\Projects\Project1.cbproj</Transaction>
+    <Transaction>2022.05.30 19:40:54.822,D:\Documents\GitHub\Cpp-course\8 Recursion\8 Recursion.cbproj=D:\Documents\GitHub\Cpp-course\8 Recursion\Recursion.cbproj</Transaction>
+  </Transactions>
+</BorlandProject>

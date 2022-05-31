@@ -1,0 +1,73 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "MainUnit.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TForm1 *Form1;
+//---------------------------------------------------------------------------
+__fastcall TForm1::TForm1(TComponent* Owner)
+	: TForm(Owner)
+{
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::MultiplicateMassives(int _MassA[3][3], int _MassB[3]) {
+		
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::InputModeCheckBoxClick(TObject *Sender)
+{
+	if (InputModeCheckBox->Checked) {
+			GenerateButton -> Enabled = true;
+			ManualInputButton -> Enabled = false;
+			MassiveAStringGrid->Options>>goEditing;
+			MassiveBStringGrid->Options>>goEditing;
+	}
+	else {
+			GenerateButton -> Enabled = false;
+			ManualInputButton -> Enabled = true;
+			MassiveAStringGrid->Options<<goEditing;
+			MassiveBStringGrid->Options<<goEditing;
+	}
+
+	MultiplicateButton -> Enabled = false;
+	MinMaxButton -> Enabled = false;
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::GenerateButtonClick(TObject *Sender)
+{
+	Randomize();
+	for (int i = 0; i < 3; i++) {
+		for (int j = 0; j < 10; j++) {
+			MassiveA[i][j] = random(20);
+			MassiveAStringGrid -> Cells[j][i] = IntToStr(MassiveA[i][j]);
+		}
+		MassiveB[i] = random(20);
+		MassiveBStringGrid -> Cells[0][i] = IntToStr(MassiveB[i]);
+	}	
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::ManualInputButtonClick(TObject *Sender)
+{
+	for (int i = 0; i < 3; i++) {
+		for (int j = 0; j < 3; j++) {
+			MassiveA[i][j] = StrToInt(MassiveAStringGrid -> Cells[j][i]);
+		}
+        MassiveB[i] = StrToInt(MassiveBStringGrid -> Cells[0][i]);
+	}	
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::MultiplicateButtonClick(TObject *Sender)
+{
+	for (int i = 0; i < 3; i++) { 
+		MassiveC[i]=0;
+		for (int j = 0; j < 3; j++) {
+			MassiveC[j] += MassiveA[i][j]*MassiveB[j];
+		}
+	}	
+}
+//---------------------------------------------------------------------------
+
