@@ -30,6 +30,9 @@
         <Projects Include="9 AddMethods\9 AddMethods.cbproj">
             <Dependencies/>
         </Projects>
+        <Projects Include="10 StringOperations\10 StringOperations.cbproj">
+            <Dependencies/>
+        </Projects>
     </ItemGroup>
     <ProjectExtensions>
         <Borland.Personality>Default.Personality.12</Borland.Personality>
@@ -119,14 +122,23 @@
     <Target Name="9 AddMethods:Make">
         <MSBuild Projects="9 AddMethods\9 AddMethods.cbproj" Targets="Make"/>
     </Target>
+    <Target Name="10 StringOperations">
+        <MSBuild Projects="10 StringOperations\10 StringOperations.cbproj"/>
+    </Target>
+    <Target Name="10 StringOperations:Clean">
+        <MSBuild Projects="10 StringOperations\10 StringOperations.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="10 StringOperations:Make">
+        <MSBuild Projects="10 StringOperations\10 StringOperations.cbproj" Targets="Make"/>
+    </Target>
     <Target Name="Build">
-        <CallTarget Targets="1 DataTypes;2 Input-Output;3 Mathematics;4 Cycles;5 Branches;6 Massives;7 Functions;8 Recursion;9 AddMethods"/>
+        <CallTarget Targets="1 DataTypes;2 Input-Output;3 Mathematics;4 Cycles;5 Branches;6 Massives;7 Functions;8 Recursion;9 AddMethods;10 StringOperations"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="1 DataTypes:Clean;2 Input-Output:Clean;3 Mathematics:Clean;4 Cycles:Clean;5 Branches:Clean;6 Massives:Clean;7 Functions:Clean;8 Recursion:Clean;9 AddMethods:Clean"/>
+        <CallTarget Targets="1 DataTypes:Clean;2 Input-Output:Clean;3 Mathematics:Clean;4 Cycles:Clean;5 Branches:Clean;6 Massives:Clean;7 Functions:Clean;8 Recursion:Clean;9 AddMethods:Clean;10 StringOperations:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="1 DataTypes:Make;2 Input-Output:Make;3 Mathematics:Make;4 Cycles:Make;5 Branches:Make;6 Massives:Make;7 Functions:Make;8 Recursion:Make;9 AddMethods:Make"/>
+        <CallTarget Targets="1 DataTypes:Make;2 Input-Output:Make;3 Mathematics:Make;4 Cycles:Make;5 Branches:Make;6 Massives:Make;7 Functions:Make;8 Recursion:Make;9 AddMethods:Make;10 StringOperations:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>

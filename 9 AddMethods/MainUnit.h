@@ -29,11 +29,13 @@ __published:	// IDE-managed Components
 	TEdit *MaximumEdit;
 	TButton *ManualInputButton;
 	TCheckBox *InputModeCheckBox;
+	TButton *SortingButton;
 	void __fastcall InputModeCheckBoxClick(TObject *Sender);
 	void __fastcall GenerateButtonClick(TObject *Sender);
 	void __fastcall ManualInputButtonClick(TObject *Sender);
 	void __fastcall MultiplicateButtonClick(TObject *Sender);
 	void __fastcall MinMaxButtonClick(TObject *Sender);
+	void __fastcall SortingButtonClick(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
 

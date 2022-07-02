@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.122,D:\Documents\GitHub\Cpp-course\10 StringOperations\StringOperations.cbproj=D:\Documents\Embarcadero\Studio\Projects\Project1.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.610,D:\Documents\GitHub\Cpp-course\10 StringOperations\SentenceParsingUnit.cpp=D:\Documents\GitHub\Cpp-course\10 StringOperations\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.610,D:\Documents\GitHub\Cpp-course\10 StringOperations\SentenceParsingUnit.h=D:\Documents\GitHub\Cpp-course\10 StringOperations\Unit1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.938,=D:\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.601,D:\Documents\GitHub\Cpp-course\10 StringOperations\StringOperationsProject.h=D:\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.316,D:\Documents\GitHub\Cpp-course\10 StringOperations\MainUnit.dfm=D:\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.028,=D:\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.677,=D:\Documents\GitHub\Cpp-course\10 StringOperations\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.610,D:\Documents\GitHub\Cpp-course\10 StringOperations\SentenceParsingUnit.dfm=D:\Documents\GitHub\Cpp-course\10 StringOperations\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.316,D:\Documents\GitHub\Cpp-course\10 StringOperations\MainUnit.cpp=D:\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.508,D:\Documents\GitHub\Cpp-course\10 StringOperations\10 StringOperations.cbproj=D:\Documents\GitHub\Cpp-course\10 StringOperations\StringOperations.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.316,D:\Documents\GitHub\Cpp-course\10 StringOperations\MainUnit.h=D:\Documents\Embarcadero\Studio\Projects\Unit1.h</Transaction>
+  </Transactions>
+</BorlandProject>

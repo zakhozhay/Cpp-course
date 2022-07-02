@@ -1,0 +1,26 @@
+//---------------------------------------------------------------------------
+
+#ifndef SentenceParsingUnitH
+#define SentenceParsingUnitH
+//---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+#include <Vcl.Controls.hpp>
+#include <Vcl.StdCtrls.hpp>
+#include <Vcl.Forms.hpp>
+//---------------------------------------------------------------------------
+class TSentenceForm : public TForm
+{
+__published:	// IDE-managed Components
+	TEdit *SentenceEdit;
+	TLabel *Label1;
+	TListBox *ListBox1;
+	TButton *ParsingButton;
+	void __fastcall ParsingButtonClick(TObject *Sender);
+private:	// User declarations
+public:		// User declarations
+	__fastcall TSentenceForm(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TSentenceForm *SentenceForm;
+//---------------------------------------------------------------------------
+#endif

@@ -167,4 +167,14 @@ object MainForm: TMainForm
     TabOrder = 9
     OnClick = InputModeCheckBoxClick
   end
+  object SortingButton: TButton
+    Left = 408
+    Top = 144
+    Width = 129
+    Height = 25
+    Caption = #1057#1086#1088#1090#1091#1074#1072#1090#1080' '#1084#1072#1089#1080#1074' '#1057
+    Enabled = False
+    TabOrder = 10
+    OnClick = SortingButtonClick
+  end
 end

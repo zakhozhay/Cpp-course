@@ -1,0 +1,24 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "SentenceParsingUnit.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TSentenceForm *SentenceForm;
+//---------------------------------------------------------------------------
+__fastcall TSentenceForm::TSentenceForm(TComponent* Owner)
+	: TForm(Owner)
+{
+}
+//---------------------------------------------------------------------------
+void __fastcall TSentenceForm::ParsingButtonClick(TObject *Sender)
+{
+	std:string line = SentenceEdit -> Text;	 // для скороченння запису введемо окрему змінну line,
+											 // хоча можна і напряму працювати з властивістю Text,
+											 // так як аоне також має тип даних string
+	line.
+}
+//---------------------------------------------------------------------------

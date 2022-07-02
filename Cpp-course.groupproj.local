@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Transactions>
-    <Transaction>1899.12.30 00:00:00.000.160,D:\Documents\GitHub\Cpp-course\Cpp-course.groupproj=D:\Documents\Embarcadero\Studio\Projects\ProjectGroup1.groupproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.160,D:\Documents\Embarcadero\Studio\Projects\ProjectGroup1.groupproj=D:\Documents\GitHub\Cpp-course\Cpp-course.groupproj</Transaction>
   </Transactions>
 	<Default.Personality>
-		<Projects ActiveProject="D:\Documents\GitHub\Cpp-course\9 AddMethods\9 AddMethods.cbproj"/>
+		<Projects ActiveProject="D:\Documents\GitHub\Cpp-course\10 StringOperations\10 StringOperations.cbproj"/>
 	</Default.Personality>
 </BorlandProject>

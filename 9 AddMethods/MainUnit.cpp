@@ -10,6 +10,7 @@
 #pragma hdrstop
 
 #include "MainUnit.h"
+#include <Math.h>
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.dfm"
@@ -20,7 +21,7 @@ __fastcall TMainForm::TMainForm(TComponent* Owner)
 {
 }
 //---------------------------------------------------------------------------
-// Створення реалізації нового метода пошу мінімума або максимума в масиві,
+// Створення реалізації нового метода пошуку мінімума або максимума в масиві,
 // прототип якого був прописаний в заголовочному файлі MainUnit.h
 // В якості параметрів передається сам масив, та строка символів,
 // що визначає дію: min - пошук мінімума, max - пошук максимума
@@ -40,6 +41,20 @@ int __fastcall TMainForm::MassiveMinMax(int Massive[3], std::string action)
 		}
 	}
 	return result;   // результат пошуку мінімума або максимума повертається з метода
+}
+//---------------------------------------------------------------------------
+// Створення звичайної функції для обміну двох значень, що передаються до неї
+// як посилання на фактичні параметри. Використання посилань дозволяє в якості результату
+// виконання функції мати декілька значень (повертати можна тількі одне). Такий підхід дозволяє
+// уникнути необхідності оголошення глобальних змінних, які дступні як в точці виклику та і в функції.
+// Тоді такі глобальні змінні можна не передавати у функцію, а просто використовувати в неї.
+// Але це поганий стиль програмування.
+void  swap (int& x1, int& x2) // Формальні параметри задаються як посилання на фактичні.
+							  // Таким чином зміна формальних параметрів буде приводити до зміни фактичних в основній програмі
+{
+	int temp = x1;
+	x1 = x2;    // одразу змінюється формальний параметр,
+	x2 = temp;  // який вказувався в основній програмі 
 }
 //---------------------------------------------------------------------------
 // Обробник події кліку на CheckBox, що визначае режим заповнення масивів
@@ -63,23 +78,28 @@ void __fastcall TMainForm::InputModeCheckBoxClick(TObject *Sender)
 
 	MultiplicateButton -> Enabled = false; // Блокування кнопок дій, так як данні
 	MinMaxButton -> Enabled = false;       // ще не задані
+	SortingButton -> Enabled = false;
 }
 //---------------------------------------------------------------------------
 void __fastcall TMainForm::GenerateButtonClick(TObject *Sender)
 {
-	Randomize();
+
 	for (int i = 0; i < 3; i++) {
 		for (int j = 0; j < 10; j++) {
+			Randomize();  // Виконання цієї функції дозволяє підвищити випадковість отримання серій значеннь наступною функцією random (range);
 			MassiveA[i][j] = random(20);
 			MassiveAStringGrid -> Cells[j][i] = IntToStr(MassiveA[i][j]);
 		}
+			Randomize();
 		MassiveB[i] = random(20);
 		MassiveBStringGrid -> Cells[0][i] = IntToStr(MassiveB[i]);
 		MassiveCStringGrid -> Cells[0][i] = "";
 	}
-	 
+	MinimumEdit -> Clear();
+	MaximumEdit -> Clear(); 
 	MultiplicateButton -> Enabled = true;
-	MinMaxButton -> Enabled = false;
+	MinMaxButton -> Enabled = !MultiplicateButton -> Enabled;
+	SortingButton -> Enabled = !MultiplicateButton -> Enabled;
 }
 //---------------------------------------------------------------------------
 void __fastcall TMainForm::ManualInputButtonClick(TObject *Sender)
@@ -91,9 +111,11 @@ void __fastcall TMainForm::ManualInputButtonClick(TObject *Sender)
 		MassiveB[i] = StrToInt(MassiveBStringGrid -> Cells[0][i]);
 		MassiveCStringGrid -> Cells[0][i] = "";
 	}
-	 
+	MinimumEdit -> Clear();
+	MaximumEdit -> Clear(); 
 	MultiplicateButton -> Enabled = true;
-	MinMaxButton -> Enabled = false;	
+	MinMaxButton -> Enabled = !MultiplicateButton -> Enabled;
+	SortingButton -> Enabled = !MultiplicateButton -> Enabled;	
 }
 //---------------------------------------------------------------------------
 void __fastcall TMainForm::MultiplicateButtonClick(TObject *Sender)
@@ -107,7 +129,8 @@ void __fastcall TMainForm::MultiplicateButtonClick(TObject *Sender)
 		MassiveCStringGrid -> Cells[0][i]= IntToStr(MassiveC[i]);
 	}
 	MultiplicateButton -> Enabled = false; // Блокування кнопки помноження (так як дія з поточними даними щойно виконана)
-	MinMaxButton -> Enabled = true;	       // Розблокування кнопки пошуку мінімуму/максимуму для щойно отриманих значень MassiveCStringGrid
+	MinMaxButton -> Enabled = !MultiplicateButton -> Enabled;	       // Розблокування кнопки пошуку мінімуму/максимуму для щойно отриманих значень MassiveCStringGrid
+	SortingButton -> Enabled = !MultiplicateButton -> Enabled;
 }
 //---------------------------------------------------------------------------
 
@@ -117,6 +140,21 @@ void __fastcall TMainForm::MinMaxButtonClick(TObject *Sender)
 	MinimumEdit->Text = IntToStr(MassiveMinMax(MassiveC, "min"));  // виклик рагіше створеного методу з опцією пошуку мінімуму
 	MaximumEdit->Text = IntToStr(MassiveMinMax(MassiveC, "max"));  // виклик рагіше створеного методу з опцією пошуку максимум
 	MinMaxButton -> Enabled = false; // Блокування кнопки MinMaxButton так як операція щойно виконана	
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TMainForm::SortingButtonClick(TObject *Sender)
+{
+	int temp;  // Змінна вводиться для переставлення містами двох елементів масиву
+	for (int i = 0; i < 3; i++) {
+		for (int j = i+1; j < 3; j++) {
+			if (MassiveC[j] < MassiveC[i]){
+				swap(MassiveC[i], MassiveC[j]); //ці фактичні параметри будуть пов'язані з відповідними формальними параметрами в функції.
+											    // Таким чином, зміна формального параметру, буде також призводити до зміни фактичного параметру. 
+			} 
+		}
+		MassiveCStringGrid -> Cells[0][i] = IntToStr(MassiveC[i]);
+	}	
 }
 //---------------------------------------------------------------------------
 
