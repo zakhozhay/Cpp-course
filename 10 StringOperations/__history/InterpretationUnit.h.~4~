@@ -1,0 +1,33 @@
+//---------------------------------------------------------------------------
+
+#ifndef InterpretationUnitH
+#define InterpretationUnitH
+//---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+#include <Vcl.Controls.hpp>
+#include <Vcl.StdCtrls.hpp>
+#include <Vcl.Forms.hpp>
+#include <Vcl.ExtCtrls.hpp>
+//---------------------------------------------------------------------------
+class TInterpretationForm : public TForm
+{
+__published:	// IDE-managed Components
+	TPanel *Panel1;
+	TPanel *Panel2;
+	TPanel *Panel3;
+	TPanel *Panel4;
+	TMemo *CMDMemo;
+	TLabel *Label1;
+	void __fastcall CMDMemoKeyPress(TObject *Sender, System::WideChar &Key);
+private:	// User declarations
+public:		// User declarations
+    void help(void);
+	void clear(void);
+	void enable ();
+	void disable ();
+	__fastcall TInterpretationForm(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TInterpretationForm *InterpretationForm;
+//---------------------------------------------------------------------------
+#endif

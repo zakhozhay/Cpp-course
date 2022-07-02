@@ -1,0 +1,29 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "InterpretationUnit.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TInterpretationForm *InterpretationForm;
+//---------------------------------------------------------------------------
+__fastcall TInterpretationForm::TInterpretationForm(TComponent* Owner)
+	: TForm(Owner)
+{
+}
+//---------------------------------------------------------------------------
+void __fastcall TInterpretationForm::CMDEditKeyPress(TObject *Sender, System::WideChar &Key)
+
+{
+   if (Key == VK_RETURN){
+   CMD
+   //AnsiString command = CMDMemo -> Lines ->;
+   command.Trim();
+   if (command.Pos("?") == 1) {
+       ShowMessage("awefg");
+   }
+   }
+}
+//---------------------------------------------------------------------------

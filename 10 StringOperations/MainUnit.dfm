@@ -13,12 +13,21 @@ object MainForm: TMainForm
   PixelsPerInch = 96
   TextHeight = 15
   object SentenceParsingButton: TButton
-    Left = 56
-    Top = 88
+    Left = 8
+    Top = 8
     Width = 97
     Height = 25
     Caption = #1056#1086#1079#1073#1110#1088' '#1088#1077#1095#1077#1085#1085#1103
     TabOrder = 0
     OnClick = SentenceParsingButtonClick
+  end
+  object InterpretationButton: TButton
+    Left = 111
+    Top = 8
+    Width = 97
+    Height = 25
+    Caption = #1030#1085#1090#1077#1088#1087#1088#1077#1090#1072#1094#1110#1103
+    TabOrder = 1
+    OnClick = InterpretationButtonClick
   end
 end

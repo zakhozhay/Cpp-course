@@ -12,7 +12,9 @@ class TMainForm : public TForm
 {
 __published:	// IDE-managed Components
 	TButton *SentenceParsingButton;
+	TButton *InterpretationButton;
 	void __fastcall SentenceParsingButtonClick(TObject *Sender);
+	void __fastcall InterpretationButtonClick(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
 	__fastcall TMainForm(TComponent* Owner);

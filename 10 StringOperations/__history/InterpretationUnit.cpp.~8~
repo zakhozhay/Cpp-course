@@ -1,0 +1,61 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "InterpretationUnit.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TInterpretationForm *InterpretationForm;
+//---------------------------------------------------------------------------
+__fastcall TInterpretationForm::TInterpretationForm(TComponent* Owner)
+	: TForm(Owner)
+{
+}
+void TInterpretationForm::help (void)
+{
+  CMDMemo -> Lines -> Add("Довідка nо використанню інтерпретатора\r\n----------------------------------------------");
+  CMDMemo -> Lines -> Add("Кожну команду з параметрами треба розташовувати в окремому рядку.");
+  CMDMemo -> Lines -> Add("Для виконання команди встановіть курсор наприкінці команди\r\n(за останнім параметром команди, за наявності)\r\nта натисніть клавішу <Enter>");
+  CMDMemo -> Lines -> Add("Команди:");
+  CMDMemo -> Lines -> Add("? - виклик довідки");
+  CMDMemo -> Lines -> Add("clear - очищення екрану");
+}
+void TInterpretationForm::clear (void)
+{
+  CMDMemo -> Lines-> Clear();
+}
+void TInterpretationForm::enable (void)
+{
+
+}
+void TInterpretationForm::disable (void)
+{
+
+}
+//---------------------------------------------------------------------------
+void __fastcall TInterpretationForm::CMDMemoKeyPress(TObject *Sender, System::WideChar &Key)
+
+{
+	if (Key == VK_RETURN){
+		AnsiString command = CMDMemo -> Lines -> Strings[CMDMemo -> Lines -> Count - 1];
+		command = command.Trim();
+		if (command.Pos("?") == 1) {
+			help();
+		}
+		if (command.Pos("clear") == 1) {
+			clear();
+		}
+		if (command.Pos("enable") == 1) {
+			enable();
+		}
+        if (command.Pos("enable") == 1) {
+			disable();
+		}
+
+
+   }
+}
+//---------------------------------------------------------------------------
+

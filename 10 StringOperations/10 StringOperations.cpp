@@ -4,8 +4,9 @@
 #pragma hdrstop
 #include <tchar.h>
 //---------------------------------------------------------------------------
-USEFORM("MainUnit.cpp", MainForm);
 USEFORM("SentenceParsingUnit.cpp", SentenceForm);
+USEFORM("MainUnit.cpp", MainForm);
+USEFORM("InterpretationUnit.cpp", InterpretationForm);
 //---------------------------------------------------------------------------
 int WINAPI _tWinMain(HINSTANCE, HINSTANCE, LPTSTR, int)
 {
@@ -15,6 +16,7 @@ int WINAPI _tWinMain(HINSTANCE, HINSTANCE, LPTSTR, int)
 		Application->MainFormOnTaskBar = true;
 		Application->CreateForm(__classid(TMainForm), &MainForm);
 		Application->CreateForm(__classid(TSentenceForm), &SentenceForm);
+		Application->CreateForm(__classid(TInterpretationForm), &InterpretationForm);
 		Application->Run();
 	}
 	catch (Exception &exception)

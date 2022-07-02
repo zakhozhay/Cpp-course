@@ -5,6 +5,7 @@
 
 #include "MainUnit.h"
 #include "SentenceParsingUnit.h"
+#include "InterpretationUnit.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.dfm"
@@ -20,3 +21,11 @@ void __fastcall TMainForm::SentenceParsingButtonClick(TObject *Sender)
 	SentenceForm -> ShowModal();
 }
 //---------------------------------------------------------------------------
+
+
+void __fastcall TMainForm::InterpretationButtonClick(TObject *Sender)
+{
+	InterpretationForm -> ShowModal();
+}
+//---------------------------------------------------------------------------
+
