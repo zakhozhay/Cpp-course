@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Transactions>
-    <Transaction>1899.12.30 00:00:00.000.485,D:\Documents\GitHub\Cpp-course\6 Massives\Massives.cbproj=D:\Documents\GitHub\Cpp-course\6 Massives\6 Massives.cbproj</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.867,=D:\Documents\Embarcadero\Studio\Projects\File1.cpp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.720,D:\Documents\Embarcadero\Studio\Projects\File1.cpp=D:\Documents\GitHub\Cpp-course\6 Massives\Massives.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.485,D:\Documents\GitHub\Cpp-course\6 Massives\6 Massives.cbproj=D:\Documents\GitHub\Cpp-course\6 Massives\Massives.cbproj</Transaction>
     <Transaction>1899.12.30 00:00:00.000.797,=D:\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.065,D:\Documents\Embarcadero\Studio\Projects\Project1PCH1.h=D:\Documents\GitHub\Cpp-course\6 Massives\Massives.h</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.849,D:\Documents\Embarcadero\Studio\Projects\Project1.cbproj=D:\Documents\GitHub\Cpp-course\6 Massives\Massives.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.867,=D:\Documents\Embarcadero\Studio\Projects\File1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.849,D:\Documents\GitHub\Cpp-course\6 Massives\Massives.cbproj=D:\Documents\Embarcadero\Studio\Projects\Project1.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.065,D:\Documents\GitHub\Cpp-course\6 Massives\Massives.h=D:\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.720,D:\Documents\GitHub\Cpp-course\6 Massives\Massives.cpp=D:\Documents\Embarcadero\Studio\Projects\File1.cpp</Transaction>
   </Transactions>
 </BorlandProject>
