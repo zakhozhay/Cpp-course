@@ -3,31 +3,31 @@
         <ProjectGuid>{F7AF14DF-7029-436A-9E90-115665CFA06B}</ProjectGuid>
     </PropertyGroup>
     <ItemGroup>
-        <Projects Include="1 Data Types\1 DataTypes.cbproj">
+        <Projects Include="01 Data Types\1 DataTypes.cbproj">
             <Dependencies/>
         </Projects>
-        <Projects Include="2 Input-Output\2 Input-Output.cbproj">
+        <Projects Include="02 Input-Output\2 Input-Output.cbproj">
             <Dependencies/>
         </Projects>
-        <Projects Include="3 Mathematics\3 Mathematics.cbproj">
+        <Projects Include="03 Mathematics\3 Mathematics.cbproj">
             <Dependencies/>
         </Projects>
-        <Projects Include="4 Cycles\4 Cycles.cbproj">
+        <Projects Include="04 Cycles\4 Cycles.cbproj">
             <Dependencies/>
         </Projects>
-        <Projects Include="5 Branches\5 Branches.cbproj">
+        <Projects Include="05 Branches\5 Branches.cbproj">
             <Dependencies/>
         </Projects>
-        <Projects Include="6 Massives\6 Massives.cbproj">
+        <Projects Include="06 Massives\6 Massives.cbproj">
             <Dependencies/>
         </Projects>
-        <Projects Include="7 Functions\7 Functions.cbproj">
+        <Projects Include="07 Functions\7 Functions.cbproj">
             <Dependencies/>
         </Projects>
-        <Projects Include="8 Recursion\8 Recursion.cbproj">
+        <Projects Include="08 Recursion\8 Recursion.cbproj">
             <Dependencies/>
         </Projects>
-        <Projects Include="9 AddMethods\9 AddMethods.cbproj">
+        <Projects Include="09 AddMethods\9 AddMethods.cbproj">
             <Dependencies/>
         </Projects>
         <Projects Include="10 StringOperations\10 StringOperations.cbproj">
@@ -42,85 +42,85 @@
         </BorlandProject>
     </ProjectExtensions>
     <Target Name="1 DataTypes">
-        <MSBuild Projects="1 Data Types\1 DataTypes.cbproj"/>
+        <MSBuild Projects="01 Data Types\1 DataTypes.cbproj"/>
     </Target>
     <Target Name="1 DataTypes:Clean">
-        <MSBuild Projects="1 Data Types\1 DataTypes.cbproj" Targets="Clean"/>
+        <MSBuild Projects="01 Data Types\1 DataTypes.cbproj" Targets="Clean"/>
     </Target>
     <Target Name="1 DataTypes:Make">
-        <MSBuild Projects="1 Data Types\1 DataTypes.cbproj" Targets="Make"/>
+        <MSBuild Projects="01 Data Types\1 DataTypes.cbproj" Targets="Make"/>
     </Target>
     <Target Name="2 Input-Output">
-        <MSBuild Projects="2 Input-Output\2 Input-Output.cbproj"/>
+        <MSBuild Projects="02 Input-Output\2 Input-Output.cbproj"/>
     </Target>
     <Target Name="2 Input-Output:Clean">
-        <MSBuild Projects="2 Input-Output\2 Input-Output.cbproj" Targets="Clean"/>
+        <MSBuild Projects="02 Input-Output\2 Input-Output.cbproj" Targets="Clean"/>
     </Target>
     <Target Name="2 Input-Output:Make">
-        <MSBuild Projects="2 Input-Output\2 Input-Output.cbproj" Targets="Make"/>
+        <MSBuild Projects="02 Input-Output\2 Input-Output.cbproj" Targets="Make"/>
     </Target>
     <Target Name="3 Mathematics">
-        <MSBuild Projects="3 Mathematics\3 Mathematics.cbproj"/>
+        <MSBuild Projects="03 Mathematics\3 Mathematics.cbproj"/>
     </Target>
     <Target Name="3 Mathematics:Clean">
-        <MSBuild Projects="3 Mathematics\3 Mathematics.cbproj" Targets="Clean"/>
+        <MSBuild Projects="03 Mathematics\3 Mathematics.cbproj" Targets="Clean"/>
     </Target>
     <Target Name="3 Mathematics:Make">
-        <MSBuild Projects="3 Mathematics\3 Mathematics.cbproj" Targets="Make"/>
+        <MSBuild Projects="03 Mathematics\3 Mathematics.cbproj" Targets="Make"/>
     </Target>
     <Target Name="4 Cycles">
-        <MSBuild Projects="4 Cycles\4 Cycles.cbproj"/>
+        <MSBuild Projects="04 Cycles\4 Cycles.cbproj"/>
     </Target>
     <Target Name="4 Cycles:Clean">
-        <MSBuild Projects="4 Cycles\4 Cycles.cbproj" Targets="Clean"/>
+        <MSBuild Projects="04 Cycles\4 Cycles.cbproj" Targets="Clean"/>
     </Target>
     <Target Name="4 Cycles:Make">
-        <MSBuild Projects="4 Cycles\4 Cycles.cbproj" Targets="Make"/>
+        <MSBuild Projects="04 Cycles\4 Cycles.cbproj" Targets="Make"/>
     </Target>
     <Target Name="5 Branches">
-        <MSBuild Projects="5 Branches\5 Branches.cbproj"/>
+        <MSBuild Projects="05 Branches\5 Branches.cbproj"/>
     </Target>
     <Target Name="5 Branches:Clean">
-        <MSBuild Projects="5 Branches\5 Branches.cbproj" Targets="Clean"/>
+        <MSBuild Projects="05 Branches\5 Branches.cbproj" Targets="Clean"/>
     </Target>
     <Target Name="5 Branches:Make">
-        <MSBuild Projects="5 Branches\5 Branches.cbproj" Targets="Make"/>
+        <MSBuild Projects="05 Branches\5 Branches.cbproj" Targets="Make"/>
     </Target>
     <Target Name="6 Massives">
-        <MSBuild Projects="6 Massives\6 Massives.cbproj"/>
+        <MSBuild Projects="06 Massives\6 Massives.cbproj"/>
     </Target>
     <Target Name="6 Massives:Clean">
-        <MSBuild Projects="6 Massives\6 Massives.cbproj" Targets="Clean"/>
+        <MSBuild Projects="06 Massives\6 Massives.cbproj" Targets="Clean"/>
     </Target>
     <Target Name="6 Massives:Make">
-        <MSBuild Projects="6 Massives\6 Massives.cbproj" Targets="Make"/>
+        <MSBuild Projects="06 Massives\6 Massives.cbproj" Targets="Make"/>
     </Target>
     <Target Name="7 Functions">
-        <MSBuild Projects="7 Functions\7 Functions.cbproj"/>
+        <MSBuild Projects="07 Functions\7 Functions.cbproj"/>
     </Target>
     <Target Name="7 Functions:Clean">
-        <MSBuild Projects="7 Functions\7 Functions.cbproj" Targets="Clean"/>
+        <MSBuild Projects="07 Functions\7 Functions.cbproj" Targets="Clean"/>
     </Target>
     <Target Name="7 Functions:Make">
-        <MSBuild Projects="7 Functions\7 Functions.cbproj" Targets="Make"/>
+        <MSBuild Projects="07 Functions\7 Functions.cbproj" Targets="Make"/>
     </Target>
     <Target Name="8 Recursion">
-        <MSBuild Projects="8 Recursion\8 Recursion.cbproj"/>
+        <MSBuild Projects="08 Recursion\8 Recursion.cbproj"/>
     </Target>
     <Target Name="8 Recursion:Clean">
-        <MSBuild Projects="8 Recursion\8 Recursion.cbproj" Targets="Clean"/>
+        <MSBuild Projects="08 Recursion\8 Recursion.cbproj" Targets="Clean"/>
     </Target>
     <Target Name="8 Recursion:Make">
-        <MSBuild Projects="8 Recursion\8 Recursion.cbproj" Targets="Make"/>
+        <MSBuild Projects="08 Recursion\8 Recursion.cbproj" Targets="Make"/>
     </Target>
     <Target Name="9 AddMethods">
-        <MSBuild Projects="9 AddMethods\9 AddMethods.cbproj"/>
+        <MSBuild Projects="09 AddMethods\9 AddMethods.cbproj"/>
     </Target>
     <Target Name="9 AddMethods:Clean">
-        <MSBuild Projects="9 AddMethods\9 AddMethods.cbproj" Targets="Clean"/>
+        <MSBuild Projects="09 AddMethods\9 AddMethods.cbproj" Targets="Clean"/>
     </Target>
     <Target Name="9 AddMethods:Make">
-        <MSBuild Projects="9 AddMethods\9 AddMethods.cbproj" Targets="Make"/>
+        <MSBuild Projects="09 AddMethods\9 AddMethods.cbproj" Targets="Make"/>
     </Target>
     <Target Name="10 StringOperations">
         <MSBuild Projects="10 StringOperations\10 StringOperations.cbproj"/>
