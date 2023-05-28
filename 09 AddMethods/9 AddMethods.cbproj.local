@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Transactions>
-    <Transaction>1899.12.30 00:00:00.000.834,D:\Documents\Embarcadero\Studio\Projects\Project1.cbproj=D:\Documents\GitHub\Cpp-course\9 AddMethods\AddMethods.cbproj</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.434,D:\Documents\Embarcadero\Studio\Projects\Project1PCH1.h=D:\Documents\GitHub\Cpp-course\9 AddMethods\AddMethodsProject.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.434,D:\Documents\GitHub\Cpp-course\9 AddMethods\AddMethodsProject.h=D:\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.470,D:\Documents\GitHub\Cpp-course\9 AddMethods\MainUnit.h=D:\Documents\Embarcadero\Studio\Projects\Unit1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.470,D:\Documents\GitHub\Cpp-course\9 AddMethods\MainUnit.dfm=D:\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
     <Transaction>1899.12.30 00:00:00.000.923,=D:\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.324,D:\Documents\GitHub\Cpp-course\9 AddMethods\AddMethods.cbproj=D:\Documents\GitHub\Cpp-course\9 AddMethods\9 AddMethods.cbproj</Transaction>
     <Transaction>1899.12.30 00:00:00.000.033,=D:\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.470,D:\Documents\Embarcadero\Studio\Projects\Unit1.cpp=D:\Documents\GitHub\Cpp-course\9 AddMethods\MainUnit.cpp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.470,D:\Documents\Embarcadero\Studio\Projects\Unit1.dfm=D:\Documents\GitHub\Cpp-course\9 AddMethods\MainUnit.dfm</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.470,D:\Documents\Embarcadero\Studio\Projects\Unit1.h=D:\Documents\GitHub\Cpp-course\9 AddMethods\MainUnit.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.324,D:\Documents\GitHub\Cpp-course\9 AddMethods\9 AddMethods.cbproj=D:\Documents\GitHub\Cpp-course\9 AddMethods\AddMethods.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.834,D:\Documents\GitHub\Cpp-course\9 AddMethods\AddMethods.cbproj=D:\Documents\Embarcadero\Studio\Projects\Project1.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.470,D:\Documents\GitHub\Cpp-course\9 AddMethods\MainUnit.cpp=D:\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
   </Transactions>
 </BorlandProject>

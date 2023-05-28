@@ -13,14 +13,12 @@
 
 #include <stdio.h>
 
-using namespace std;
-
 int fibonacci(int n)
 {
 	int result;
 	int fibonacci1;
 	int fibonacci2;
-	wcout << endl << "Виклик функції fibonacci(" << n << ")...";
+	std::wcout << std::endl << "Виклик функції fibonacci(" << n << ")...";
 	if (n < 3) {
 		result = 1;
 	}
@@ -29,7 +27,7 @@ int fibonacci(int n)
 		fibonacci2 = fibonacci(n - 2);
 		result = fibonacci1 + fibonacci2;
 	}
-	wcout << endl << "Результат виконання функції fibonacci(" << n << ") = " << result;
+	std::wcout << std::endl << "Результат виконання функції fibonacci(" << n << ") = " << result;
 	return result;
 }
 
@@ -38,9 +36,9 @@ int _tmain(int argc, _TCHAR* argv[])
 	SetConsoleOutputCP(1251);
 
 	int number;
-	wcout << "Введіть порядковий номер елемента з ряду Фібоначчі: ";
-	wcin >> number;
-	wcout << endl << number << "-й елемент ряду Фібоначчі дорівнює: " << fibonacci(number);
+	std::wcout << "Введіть порядковий номер елемента з ряду Фібоначчі: ";
+	std::wcin >> number;
+	std::wcout << std::endl << number << "-й елемент ряду Фібоначчі дорівнює: " << fibonacci(number);
 
 	getch();
 	return 0;

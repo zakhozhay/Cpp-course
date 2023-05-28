@@ -13,14 +13,13 @@
 #endif
 
 #include <stdio.h>
-using namespace std;
 
 int _tmain(int argc, _TCHAR* argv[])
 {
 	SetConsoleOutputCP(1251);
 
-	string line = "Рядок символів";
-	cout<<line.append("!");
+	std::string line = "Рядок символів";
+	std::cout<<line.append("!");
 	getch();
 	return 0;
 }

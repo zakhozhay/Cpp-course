@@ -14,8 +14,6 @@
 
 #include <stdio.h>
 
-using namespace std;
-
 int _tmain(int argc, _TCHAR* argv[]) 
 {
 	SetConsoleOutputCP(1251);
@@ -24,47 +22,47 @@ int _tmain(int argc, _TCHAR* argv[])
 	double credits; // Змінна, що буде містити кількість балів
 	char flag;
 convert:
-	cout<<"Введіть кількість балів:";
-	cin>>credits;
+	std::cout<<"Введіть кількість балів:";
+	std::cin>>credits;
 	if (credits >=90 && credits <=100) {
-				wcout<<"Бал "<<credits<<" відповідає букві A за шкалою ECTS";
+				std::wcout<<"Бал "<<credits<<" відповідає букві A за шкалою ECTS";
 	}
 	else if (credits >= 82 && credits <=89) {
-					wcout<<"Бал "<<credits<<" відповідає букві B за шкалою ECTS";
+					std::wcout<<"Бал "<<credits<<" відповідає букві B за шкалою ECTS";	 
 		 }
 		 else if (credits >= 74 && credits <= 81) {
-						wcout<<"Бал "<<credits<<" відповідає букві C за шкалою ECTS";
+						std::wcout<<"Бал "<<credits<<" відповідає букві C за шкалою ECTS";    
 			  }            
 			  else if (credits >= 64 && credits <= 73) {
-							  wcout<<"Бал "<<credits<<" відповідає букві D за шкалою ECTS";
+							  std::wcout<<"Бал "<<credits<<" відповідає букві D за шкалою ECTS"; 
 				   }
 				   else if (credits >= 60 && credits <= 63) {
-									wcout<<"Бал "<<credits<<" відповідає букві E за шкалою ECTS";
+									std::wcout<<"Бал "<<credits<<" відповідає букві E за шкалою ECTS";    
 						}
 						else if (credits >= 35 && credits <= 59) {
-										wcout<<"Бал "<<credits<<" відповідає букві Fx за шкалою ECTS";
+										std::wcout<<"Бал "<<credits<<" відповідає букві Fx за шкалою ECTS";    
 
 							 }
 							 else if (credits >= 0 && credits <= 34) {
-											 cout<<"Бал "<<credits<<" відповідає букві F за шкалою ECTS";
+											 std::wcout<<"Бал "<<credits<<" відповідає букві F за шкалою ECTS";
 								  }
-								  else wcout<<"Введене значення балу не відповідає шкалі ECTS";
+								  else std::wcout<<"Введене значення балу не відповідає шкалі ECTS";
 
 
-	wcout<<endl<<"Бажаєте повторити запит? (y/n): ";
+	std::wcout<<std::endl<<"Бажаєте повторити запит? (y/n): ";
 	
 quary:
-		cin>>flag;
+		std::cin>>flag;
 		switch (flag) {
 			case 'y': goto convert; break;
 			case 'n': goto next;
 			default: {
-					   wcout<<"Помилка! Повторити запит? (y/n): ";
+					   std::wcout<<"Помилка! Повторити запит? (y/n): ";
 					   goto quary;
 					 }
 		}
 next:		 
-	wcout<<"Натисніть будь-яку кнопку...";
+	std::wcout<<"Натисніть будь-яку кнопку...";
 	getch();
 	return 0;
 }
